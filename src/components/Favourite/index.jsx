@@ -25,6 +25,32 @@ const Favourite = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <section className="max-w-7xl m-4 lg:mx-auto mb-8 lg:mb-24 p-4 md:p-0">
@@ -41,7 +67,7 @@ const Favourite = () => {
         </a>
       </div>
       {/* course and image desktop section */}
-      <div className="gap-8 relative">
+      <div className="gap-8 relative mx-10 md:mx-0">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
@@ -64,21 +90,21 @@ const Favourite = () => {
         {/* arrow left */}
         <figure
           onClick={previous}
-          className="absolute left-10 top-[40%] cursor-pointer"
+          className="absolute left-10 top-[40%] cursor-pointer hidden md:block"
         >
           <img src={arrowLeft} alt="" />
         </figure>
         {/* right left */}
         <figure
           onClick={next}
-          className="absolute right-16 top-[40%] cursor-pointer"
+          className="absolute right-16 top-[40%] cursor-pointer hidden md:block"
         >
           <img src={arrowRight} alt="" />
         </figure>
       </div>
 
       {/* course and image mobile section */}
-      <div className="md:hidden flex justify-between gap-4 relative">
+      {/* <div className="md:hidden flex justify-between gap-4 relative">
         <figure className="">
           <img src={marketing} alt="" />
         </figure>
@@ -89,7 +115,7 @@ const Favourite = () => {
         <figure className="">
           <img src={programming} alt="" />
         </figure>
-      </div>
+      </div> */}
     </section>
   );
 };

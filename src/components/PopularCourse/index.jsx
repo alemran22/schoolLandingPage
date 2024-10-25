@@ -20,7 +20,7 @@ const PopularCourse = () => {
         </button>
       </div>
       {/* card container section */}
-      <article className="grid grid-cols-2 lg:grid-cols-12 gap-x-2 lg:gap-x-8 gap-y-3 lg:gap-y-4 mb-4 lg:mb-24">
+      <article className="grid grid-cols-2 lg:grid-cols-12 gap-x-2 lg:gap-x-8 gap-y-3 lg:gap-y-14 mb-4 lg:mb-24">
         {/* card 1 */}
         {CardData.map((item) => (
           <CourseCard key={item.id} {...item} />

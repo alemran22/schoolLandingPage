@@ -18,7 +18,7 @@ const Banner = () => {
             Quality <span className="text-green">Education</span> By Any Means
             Necessary.
           </h1>
-          <button className="w-fit bg-green rounded-md font-Source_Code_Pro text-white font-semibold py-5 px-10 outline-none">
+          <button className="w-fit bg-green hover:bg-white border border-green rounded-md font-Source_Code_Pro text-white hover:text-green font-semibold py-5 px-10 outline-none">
             <a href="#">Get Started</a>
           </button>
         </aside>

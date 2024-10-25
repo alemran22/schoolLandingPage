@@ -11,7 +11,7 @@ const Navbar = () => {
         className="flex items-center
        gap-4 lg:gap-0"
       >
-        <figure className="block lg:hidden">
+        <figure className="block md:hidden">
           <img src={hamburger} alt="" />
         </figure>
         <figure>
@@ -21,29 +21,29 @@ const Navbar = () => {
 
       {/* middle section */}
       <section className="hidden lg:block">
-        <ul className="font-Open_Sans font-semibold text-base flex gap-6">
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+        <ul className="font-Open_Sans font-semibold text-base text-gray_text  flex gap-6">
+          <li className="hover:text-black">
+            <a href="#" target="_blank">
               Home
             </a>
           </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+          <li className="hover:text-black">
+            <a href="#" target="_blank">
               Courses
             </a>
           </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+          <li className="hover:text-black">
+            <a href="#" target="_blank">
               Instructor
             </a>
           </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+          <li className="hover:text-black">
+            <a href="#" target="_blank">
               Schedule
             </a>
           </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+          <li className="hover:text-black">
+            <a href="#" target="_blank">
               Contact Us
             </a>
           </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
         <a href="#" className=" text-green font-semibold">
           Login
         </a>
-        <button className="bg-green rounded-md  text-white font-semibold py-3 px-6">
+        <button className="bg-green hover:bg-white rounded-md border duration-300 border-green  text-white hover:text-green font-semibold py-3 px-6">
           <a href="#">Register</a>
         </button>
       </section>

@@ -7,7 +7,7 @@ export default {
         green: "#09B451",
         white: "#ffffff",
         black: "#000000",
-        gary_text: "#333333",
+        gray_text: "#666666",
         banner_bg_color: "#f0faf4",
         light_green: "#E4FFFF",
         modified_green: "#DDFFFF",

@@ -40,7 +40,7 @@ const FirstStep = () => {
                 step
               </p>
               <div className="pt-16 flex gap-8">
-                <button className="bg-green rounded-md font-Source_Code_Pro text-white font-semibold py-4 px-6">
+                <button className="bg-green hover:bg-white rounded-md font-Source_Code_Pro text-white hover:text-green border border-green font-semibold py-4 px-6">
                   <a href="#">Get Started</a>
                 </button>
                 <button className="bg-white border border-green rounded-md font-Source_Code_Pro text-green font-semibold py-4 px-6">
