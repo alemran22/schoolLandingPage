@@ -54,10 +54,10 @@ const Navbar = () => {
         <figure className="cursor-pointer">
           <img src={search} alt="" />
         </figure>
-        <a href="#" className="font-Source_Code_Pro text-green font-semibold">
+        <a href="#" className=" text-green font-semibold">
           Login
         </a>
-        <button className="bg-green rounded-md font-Source_Code_Pro text-white font-semibold py-3 px-6">
+        <button className="bg-green rounded-md  text-white font-semibold py-3 px-6">
           <a href="#">Register</a>
         </button>
       </section>

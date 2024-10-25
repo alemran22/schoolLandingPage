@@ -25,7 +25,7 @@ const Banner = () => {
         {/* right Section */}
         <section className="relative w-full md:w-6/12 flex justify-center md:justify-end p-10 md:pr-10 z-10">
           {/* left absolute position */}
-          <div className="w-28 md:w-36   lg:w-64 absolute top-1/2 left-0 p-1 md:p-4 bg-white rounded-xl flex flex-col items-center gap-1 md:gap-3">
+          <div className="w-28 md:w-36  z-20 lg:w-64 absolute top-1/2 left-0 p-1 md:p-4 bg-white rounded-xl flex flex-col items-center gap-1 md:gap-3">
             <p className="text-center font-Poppins font-semibold text-[10px] lg:text-xl ">
               Learn from best <span className="text-green">instructors</span>
               around the globe
@@ -35,11 +35,15 @@ const Banner = () => {
             </figure>
           </div>
           {/* main image */}
-          <figure>
-            <img src={studentBanner} alt="" />
+          <figure className=" group overflow-hidden">
+            <img
+              src={studentBanner}
+              alt=""
+              className="group-hover:scale-125 hover:-left-20 z-10"
+            />
           </figure>
           {/* right absolute position */}
-          <div className="w-20 md:w-24 lg:w-32 absolute top-[60%]  lg:top-[65%] right-8 md:right-2  lg:right-4 p-2 lg:p-3 bg-white rounded-xl flex flex-col items-center gap-1 md:gap-3">
+          <div className="w-20 md:w-24 lg:w-32 absolute top-[60%]  lg:top-[65%] right-8 md:right-2  lg:right-4 p-2 lg:p-3 bg-white rounded-xl flex flex-col items-center gap-1 md:gap-3 z-20">
             <figure className="flex ">
               <img src={userLogoBanner} alt="" />
             </figure>
