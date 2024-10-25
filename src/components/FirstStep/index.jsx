@@ -1,4 +1,4 @@
-import student3 from "../assets/student-3.svg";
+import studentImg from "../../assets/images/firststep/image (38).png";
 
 const FirstStep = () => {
   return (
@@ -27,7 +27,7 @@ const FirstStep = () => {
           <main className="max-w-7xl mx-auto  h-[532px] py-20 hidden lg:flex gap-5">
             {/* left section */}
             <aside className="w-6/12 relative">
-              <img src={student3} alt="" className="absolute -top-[40%]" />
+              <img src={studentImg} alt="" className="absolute -top-[40%]" />
             </aside>
             {/* right section section */}
             <section className="w-6/12 space-y-8">

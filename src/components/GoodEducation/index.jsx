@@ -7,7 +7,7 @@ import group from "../../assets/images/goodEducation/group-reading.png";
 
 const GoodEducation = () => {
   return (
-    <section className="max-w-7xl md:m-4 lg:mx-auto mb-6 lg:mb-24 p-4 md:p-0">
+    <section className="max-w-7xl md:m-4 lg:mx-auto mb-6 lg:mb-24 p-4 md:p-0 md:mt-20">
       {/* heading */}
       <div className="flex justify-between items-center lg:items-start gap-3 lg:gap-6 mb-4 lg:mb-16">
         <h1 className="font-Poppins font-semibold text-base  md:text-3xl text-gary_text">

@@ -1,8 +1,9 @@
-import whatOurStudentSay from "../assets/what-our-stud-says.svg";
-import whatOurStudentSayMobile from "../assets/whatOurStudentSayaMobile.svg";
-import arrowCombine from "../assets/arrow-combined.svg";
-import mohhJumah from "../assets/mohh-jumah.svg";
-import jhonMark from "../assets/jhon-mark.svg";
+import whatOurStudentSay from "../../assets/images/reviews/Group 22 (1).png";
+import whatOurStudentSayMobile from "../../assets/images/reviews/Group 22.png";
+import arrowCombine from "../../assets/images/reviews/Frame 6525 (1).png";
+import arrowCombineMobile from "../../assets/images/reviews/Frame 6525 (1).png";
+import mohhJumah from "../../assets/images/reviews/Frame 6526.png";
+import jhonMark from "../../assets/images/reviews/Frame 6526 (1).png";
 
 const Review = () => {
   return (
@@ -31,7 +32,7 @@ const Review = () => {
             <img src={whatOurStudentSayMobile} alt="" />
           </figure>
           <figure className="flex justify-end items-end cursor-pointer">
-            <img src={arrowCombine} alt="" />
+            <img src={arrowCombineMobile} alt="" />
           </figure>
         </aside>
         {/* comment section */}

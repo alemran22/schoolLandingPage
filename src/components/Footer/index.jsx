@@ -1,7 +1,7 @@
-import facebook from "../assets/facebook.svg";
-import twitter from "../assets/twitter.svg";
-import instagram from "../assets/instagram.svg";
-import linkin from "../assets/link-in.svg";
+import facebook from "../../assets/images/footer/Vector (1).png";
+import twitter from "../../assets/images/footer/Vector (1).png";
+import instagram from "../../assets/images/footer/Vector (1).png";
+import linkin from "../../assets/images/footer/Vector (1).png";
 
 const Footer = () => {
   return (

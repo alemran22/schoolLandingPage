@@ -1,6 +1,6 @@
-import jhonMark from "../assets/jhon-mark-2.svg";
-import laraShorf from "../assets/lora-shrof.svg";
-import zengChin from "../assets/zeng-chinn.svg";
+import jhonMark from "../../assets/images/instructors/unsplash_3JmfENcL24M.png";
+import laraShorf from "../../assets/images/instructors/unsplash_5n3JP9WAJTs.png";
+import zengChin from "../../assets/images/instructors/unsplash_sx1x4lXBrqc.png";
 
 const Instructors = () => {
   return (
