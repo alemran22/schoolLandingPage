@@ -14,77 +14,94 @@ const Instructors = () => {
       {/* container for desktop*/}
       <main className="hidden lg:flex flex-row gap-8">
         {/* card 1 */}
-        <section className="w-full md:w-4/12  space-y-9 p-2 md:p-12 shadow-black/10 shadow-2xl">
-          {/* profile */}
-          <div className="flex flex-col items-center gap-2">
-            <figure>
-              <img src={jhonMark} alt="" />
-            </figure>
-            {/* name and designation */}
+        <section className="group w-full md:w-4/12 md:p-12 shadow-black/10 shadow-2xl">
+          {/* card */}
+          <div className="group-hover:hidden block">
+            {/* profile */}
+            <div className="flex flex-col items-center gap-2">
+              <figure>
+                <img src={jhonMark} alt="" />
+              </figure>
+              {/* name and designation */}
 
-            <h1 className="font-Open_Sans font-bold text-xs lg:text-xl">
-              Jhon Mark
-            </h1>
-            <p className="font-Open_Sans text-green font-semibold text-xs lg:text-xl">
-              Senior Developer
-            </p>
+              <h1 className="font-Open_Sans font-bold text-xs lg:text-xl">
+                Jhon Mark
+              </h1>
+              <p className="font-Open_Sans text-green font-semibold text-xs lg:text-xl">
+                Senior Developer
+              </p>
+            </div>
+            {/* comment section */}
+            <article className="mt-5">
+              <p className="text-center font-Open_Sans text-xs lg:text-lg">
+                “Education will be for you what you want it to be”
+              </p>
+            </article>
           </div>
-          {/* comment section */}
-          <article>
-            <p className="text-center font-Open_Sans text-xs lg:text-lg">
-              “Education will be for you what you want it to be”
-            </p>
-          </article>
+          {/* image */}
+          <div className="hidden group-hover:block w-full rounded-full">
+            <img src={jhonMark} alt="" className="w-full" />
+          </div>
         </section>
 
         {/* card 2 */}
-        <section className="w-full md:w-4/12  space-y-9 p-2 md:p-12 shadow-black/10 shadow-2xl">
-          {/* profile */}
-          <div className="flex flex-col items-center gap-2">
-            <figure>
-              <img src={laraShorf} alt="" />
-            </figure>
-            {/* name and designation */}
+        <section className="group w-full md:w-4/12 md:p-12 shadow-black/10 shadow-2xl">
+          <div className="group-hover:hidden block">
+            {/* profile */}
+            <div className="flex flex-col items-center gap-2">
+              <figure>
+                <img src={laraShorf} alt="" />
+              </figure>
+              {/* name and designation */}
 
-            <h1 className="font-Open_Sans font-bold text-xs lg:text-xl">
-              Lora Shrof
-            </h1>
-            <p className="font-Open_Sans text-green font-semibold text-xs lg:text-xl">
-              Marketing Lead
-            </p>
+              <h1 className="font-Open_Sans font-bold text-xs lg:text-xl">
+                Lora Shrof
+              </h1>
+              <p className="font-Open_Sans text-green font-semibold text-xs lg:text-xl">
+                Marketing Lead
+              </p>
+            </div>
+            {/* comment section */}
+            <article>
+              <p className="text-center font-Open_Sans text-xs lg:text-lg">
+                “Knowledge has to be improved, challenged, and increased
+                constantly, or it vanishes”
+              </p>
+            </article>
           </div>
-          {/* comment section */}
-          <article>
-            <p className="text-center font-Open_Sans text-xs lg:text-lg">
-              “Knowledge has to be improved, challenged, and increased
-              constantly, or it vanishes”
-            </p>
-          </article>
+          <div className="hidden group-hover:block w-full rounded-full">
+            <img src={laraShorf} alt="" className="w-full" />
+          </div>
         </section>
 
         {/* card 3 */}
-        <section className="w-full md:w-4/12  space-y-9 p-2 md:p-12 shadow-black/10 shadow-2xl">
-          {/* profile */}
-          <div className="flex flex-col items-center gap-2">
-            <figure>
-              <img src={zengChin} alt="" />
-            </figure>
-            {/* name and designation */}
+        <section className="group w-full md:w-4/12 md:p-12 shadow-black/10 shadow-2xl">
+          <div className="group-hover:hidden block">
+            {/* profile */}
+            <div className="flex flex-col items-center gap-2">
+              <figure>
+                <img src={zengChin} alt="" />
+              </figure>
+              {/* name and designation */}
 
-            <h1 className="font-Open_Sans font-bold text-xs lg:text-xl">
-              Zeng Chin
-            </h1>
-            <p className="font-Open_Sans text-green font-semibold text-xs lg:text-xl">
-              Data Analist at Meta
-            </p>
+              <h1 className="font-Open_Sans font-bold text-xs lg:text-xl">
+                Zeng Chin
+              </h1>
+              <p className="font-Open_Sans text-green font-semibold text-xs lg:text-xl">
+                Data Analist at Meta
+              </p>
+            </div>
+            {/* comment section */}
+            <article>
+              <p className="text-center font-Open_Sans text-xs lg:text-lg">
+                “Knowledge has to be improved, challenged, and increased
+                constantly, or it vanishes”
+              </p>
+            </article>
           </div>
-          {/* comment section */}
-          <article>
-            <p className="text-center font-Open_Sans text-xs lg:text-lg">
-              “To know that we know what we know, and to know that we do not
-              know what we do not know, that is true knowledge”
-            </p>
-          </article>
+          <div className="hidden group-hover:block w-full rounded-full">
+            <img src={zengChin} alt="" className="w-full" />
+          </div>
         </section>
       </main>
 

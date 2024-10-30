@@ -1,15 +1,16 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import marketing from "../../assets/images/favourite/image 8 (2).png";
-import design from "../../assets/images/favourite/Component 22.png";
-import programming from "../../assets/images/favourite/Component 25.png";
-import technology from "../../assets/images/favourite/Component 26 (1).png";
-import arrowLeft from "../../assets/images/favourite/Component 40.png";
-import arrowRight from "../../assets/images/favourite/Component 39.png";
-
 import Slider from "react-slick";
 import { useRef } from "react";
+import LeftArrow from "../CommonComponents/Arrows/LeftArrow";
+import RightArrow from "../CommonComponents/Arrows/RightArrow";
+import SliderCard from "./SliderCard";
+import CardData from "./SliderCard/CardData";
+// import marketing from "../../assets/images/favourite/image 8 (2).png";
+// import design from "../../assets/images/favourite/Component 22.png";
+// import programming from "../../assets/images/favourite/Component 25.png";
+// import technology from "../../assets/images/favourite/Component 22.png";
 
 const Favourite = () => {
   let sliderRef = useRef(null);
@@ -67,55 +68,28 @@ const Favourite = () => {
         </a>
       </div>
       {/* course and image desktop section */}
-      <div className="gap-8 relative mx-10 md:mx-0">
+      <div className="relative ">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
           }}
           {...settings}
         >
-          <figure className="">
-            <img src={marketing} alt="" />
-          </figure>
-          <figure className="">
-            <img src={design} alt="" />
-          </figure>
-          <figure className="">
-            <img src={programming} alt="" />
-          </figure>
-          <figure className="">
-            <img src={technology} alt="" />
-          </figure>
+          {CardData.map((item) => (
+            <div key={item.id} className="pl-3">
+              <SliderCard {...item} />
+            </div>
+          ))}
         </Slider>
         {/* arrow left */}
-        <figure
-          onClick={previous}
-          className="absolute left-10 top-[40%] cursor-pointer hidden md:block"
-        >
-          <img src={arrowLeft} alt="" />
+        <figure onClick={previous}>
+          <LeftArrow />
         </figure>
         {/* right left */}
-        <figure
-          onClick={next}
-          className="absolute right-16 top-[40%] cursor-pointer hidden md:block"
-        >
-          <img src={arrowRight} alt="" />
+        <figure onClick={next}>
+          <RightArrow />
         </figure>
       </div>
-
-      {/* course and image mobile section */}
-      {/* <div className="md:hidden flex justify-between gap-4 relative">
-        <figure className="">
-          <img src={marketing} alt="" />
-        </figure>
-
-        <figure className="">
-          <img src={technology} alt="" />
-        </figure>
-        <figure className="">
-          <img src={programming} alt="" />
-        </figure>
-      </div> */}
     </section>
   );
 };

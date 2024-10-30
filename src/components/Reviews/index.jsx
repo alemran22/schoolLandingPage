@@ -1,9 +1,10 @@
 import whatOurStudentSay from "../../assets/images/reviews/Group 22 (1).png";
 import whatOurStudentSayMobile from "../../assets/images/reviews/Group 22.png";
-import arrowCombine from "../../assets/images/reviews/Frame 6525 (1).png";
 import arrowCombineMobile from "../../assets/images/reviews/Frame 6525 (1).png";
 import mohhJumah from "../../assets/images/reviews/Frame 6526.png";
 import jhonMark from "../../assets/images/reviews/Frame 6526 (1).png";
+
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Review = () => {
   return (
@@ -21,8 +22,14 @@ const Review = () => {
           <figure>
             <img src={whatOurStudentSay} alt="" />
           </figure>
-          <figure className="cursor-pointer">
-            <img src={arrowCombine} alt="" />
+          {/* arrows */}
+          <figure className="flex flex-row gap-16 items-center">
+            <div className="shadow-green shadow-sm border border-green p-2 rounded-full cursor-pointer text-white hover:text-green bg-green hover:bg-white">
+              <IoIosArrowBack size={30} />
+            </div>
+            <div className="shadow-green shadow-sm border border-green p-2 rounded-full cursor-pointer text-white hover:text-green bg-green hover:bg-white">
+              <IoIosArrowForward size={30} />
+            </div>
           </figure>
         </aside>
 
@@ -31,14 +38,20 @@ const Review = () => {
           <figure>
             <img src={whatOurStudentSayMobile} alt="" />
           </figure>
-          <figure className="flex justify-end items-end cursor-pointer">
-            <img src={arrowCombineMobile} alt="" />
+          {/* arrows */}
+          <figure className="flex flex-row gap-3 items-center">
+            <div className="shadow-green shadow-sm border border-green p-2 rounded-full cursor-pointer text-white hover:text-green bg-green hover:bg-white">
+              <IoIosArrowBack size={20} />
+            </div>
+            <div className="shadow-green shadow-sm border border-green p-2 rounded-full cursor-pointer text-white hover:text-green bg-green hover:bg-white">
+              <IoIosArrowForward size={20} />
+            </div>
           </figure>
         </aside>
         {/* comment section */}
         <main className="w-full lg:w-8/12 flex gap-2 lg:gap-8">
           {/* card 1 */}
-          <section className="w-full md:w-6/12  space-y-6 p-2 md:p-12 shadow-black/10 shadow-2xl">
+          <div className="w-full md:w-6/12  space-y-6 p-2 md:p-12 shadow-black/10 shadow-2xl">
             {/* profile */}
             <div className="flex items-center gap-2 lg:gap-4">
               <figure>
@@ -63,10 +76,10 @@ const Review = () => {
                 duis imperdiet venenatis{" "}
               </p>
             </article>
-          </section>
+          </div>
 
           {/* card 2 */}
-          <section className="w-full md:w-6/12  space-y-6 p-2 md:p-12 shadow-black/10 shadow-2xl">
+          <div className="w-full md:w-6/12  space-y-6 p-2 md:p-12 shadow-black/10 shadow-2xl">
             {/* profile */}
             <div className="flex items-center gap-2 lg:gap-4">
               <figure>
@@ -91,7 +104,7 @@ const Review = () => {
                 duis imperdiet venenatis
               </p>
             </article>
-          </section>
+          </div>
         </main>
       </article>
     </section>

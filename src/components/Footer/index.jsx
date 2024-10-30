@@ -1,14 +1,14 @@
-import facebook from "../../assets/images/footer/Vector (1).png";
-import twitter from "../../assets/images/footer/Vector (1).png";
-import instagram from "../../assets/images/footer/Vector (1).png";
-import linkin from "../../assets/images/footer/Vector (1).png";
+import { Link } from "react-router-dom";
+
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Footer = () => {
   return (
     <footer className="bg-black">
-      {/* footer top container for desktop */}
+      {/* footer container for desktop */}
       <section className="max-w-7xl mx-auto hidden lg:flex flex-col ">
-        {/* social content and link container */}
+        {/* top/social content and link container */}
         <main className=" flex justify-between gap-10 py-28">
           {/* social section */}
           <section className="w-[25%] flex flex-col gap-y-8 text-white">
@@ -20,19 +20,19 @@ const Footer = () => {
               expertise.
             </p>
             {/* social Icon */}
-            <div className="flex gap-4">
-              <figure>
-                <img src={facebook} alt="" />
-              </figure>
-              <figure>
-                <img src={twitter} alt="" />
-              </figure>
-              <figure>
-                <img src={instagram} alt="" />
-              </figure>
-              <figure>
-                <img src={linkin} alt="" />
-              </figure>
+            <div className="flex flex-row items-center gap-6 mt-8 text-green text-3xl">
+              <Link to={"#"}>
+                <FaFacebook />
+              </Link>
+              <Link to={"#"}>
+                <AiFillTwitterCircle />
+              </Link>
+              <Link to={"#"}>
+                <FaInstagram />
+              </Link>
+              <Link to={"#"}>
+                <FaLinkedinIn />
+              </Link>
             </div>
           </section>
           {/* link 1 */}
@@ -71,7 +71,7 @@ const Footer = () => {
             <a href="#">Terms of Use</a>
           </section>
         </main>
-        {/* subscribe section */}
+        {/* bottom/subscribe section */}
         <article className="py-12 flex flex-col justify-center items-center gap-4">
           <h1 className="text-white font-Poppins font-semibold text-2xl">
             Subscribe to get latest updates
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </article>
       </section>
-      {/* footer top container for mobile */}
+      {/* footer container for mobile */}
       <section className="max-w-7xl mx-auto flex lg:hidden flex-col p-4 ">
         {/* subscribe section */}
         <article className="py-8 flex flex-col  items-start gap-4">
@@ -136,19 +136,19 @@ const Footer = () => {
             WiSchool
           </h1>
           {/* social Icon */}
-          <div className="flex gap-4">
-            <figure>
-              <img src={facebook} alt="" />
-            </figure>
-            <figure>
-              <img src={twitter} alt="" />
-            </figure>
-            <figure>
-              <img src={instagram} alt="" />
-            </figure>
-            <figure>
-              <img src={linkin} alt="" />
-            </figure>
+          <div className="flex flex-row items-center gap-4 text-green text-2xl">
+            <Link to={"#"}>
+              <FaFacebook />
+            </Link>
+            <Link to={"#"}>
+              <AiFillTwitterCircle />
+            </Link>
+            <Link to={"#"}>
+              <FaInstagram />
+            </Link>
+            <Link to={"#"}>
+              <FaLinkedinIn />
+            </Link>
           </div>
         </section>
       </section>

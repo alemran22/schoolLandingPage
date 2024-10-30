@@ -16,10 +16,14 @@ const GoodEducation = () => {
       </div>
       <main className="flex flex-col md:flex-row  gap-4 md:gap-24 ">
         {/* left section */}
-        <aside className="relative flex justify-start z-10 p-4 md:p-0">
+        <aside className=" relative flex justify-start z-10 p-4 md:p-0">
           {/* main image */}
-          <figure>
-            <img src={mainImg} alt="" />
+          <figure className="group overflow-hidden rounded-[40px] rounded-br-[80px]">
+            <img
+              src={mainImg}
+              alt=""
+              className="group-hover:scale-125 hover:-left-20 z-10 duration-700 group-hover:translate-y-14 group-hover:-translate-x-10"
+            />
           </figure>
           {/* right absolute position */}
           <div className="w-16 md:w-20 lg:w-32 absolute top-[60%] md:top-[50%]   -right-[3%] md:-right-[15%] px-1   py-3 md:px-3 md:py-5 bg-white rounded-xl flex flex-col items-center gap-0 md:gap-3 shadow-black/10 shadow-lg">

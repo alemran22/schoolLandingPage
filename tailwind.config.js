@@ -13,6 +13,10 @@ export default {
         modified_green: "#DDFFFF",
         modified_blue: "#1a222a",
       },
+      backgroundImage: {
+        firstStepGif: "url('./giphy (3) 4.gif')",
+        firstStepMobileBG: "url('./image 10.png')",
+      },
     },
   },
   plugins: [],

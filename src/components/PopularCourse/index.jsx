@@ -1,4 +1,4 @@
-import arrowDown from "../../assets/images/popularCourses/Vector (1).png";
+import { IoIosArrowDown } from "react-icons/io";
 import CardData from "./CardData";
 import CourseCard from "./CourseCard";
 
@@ -10,10 +10,11 @@ const PopularCourse = () => {
         <h1 className="font-Poppins font-semibold text-base md:text-3xl text-gary_text">
           Most Popular courses
         </h1>
-        <button className="flex flex-row items-center gap-2 bg-green rounded-full font-Poppins text-white font-normal px-2 py-1 md:py-3 md:px-4">
-          <figure className="">
-            <img src={arrowDown} alt="" />
-          </figure>
+        <button className="group flex flex-row items-center gap-2 bg-green hover:bg-white rounded-full font-Poppins text-lg text-white hover:text-green font-normal px-2 py-1 md:py-3 md:px-4 border-green border">
+          <IoIosArrowDown
+            size={25}
+            className="group-hover:text-green text-white"
+          />
           <a href="#" className="text-sm lg:text-base">
             Sort by
           </a>
