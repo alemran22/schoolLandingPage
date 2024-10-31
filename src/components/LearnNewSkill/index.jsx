@@ -8,6 +8,9 @@ import SkillData from "./SkillCard/SkillData";
 import SkillCard from "./SkillCard";
 import LeftArrow from "../CommonComponents/Arrows/LeftArrow";
 import RightArrow from "../CommonComponents/Arrows/RightArrow";
+import PopularCourse from "../PopularCourse";
+import CourseCard from "../PopularCourse/CourseCard";
+import CardData from "../PopularCourse/CardData";
 
 const LearnSkill = () => {
   let sliderRef = useRef(null);
@@ -47,7 +50,7 @@ const LearnSkill = () => {
           </button>
         </div>
         {/* card container section */}
-        <article className="relative ">
+        <article className="relative hidden md:block">
           <Slider
             ref={(slider) => {
               sliderRef = slider;
@@ -67,6 +70,14 @@ const LearnSkill = () => {
           <figure onClick={next} className="right-3 absolute top-[25%]">
             <RightArrow />
           </figure>
+        </article>
+        {/* mobile view */}
+
+        <article className="md:hidden grid grid-cols-2 lg:grid-cols-12 gap-x-2 lg:gap-x-8 gap-y-3 lg:gap-y-14 mb-4 lg:mb-24">
+          {/* card  */}
+          {CardData.map((item) => (
+            <CourseCard key={item.id} {...item} />
+          ))}
         </article>
       </section>
     </section>
